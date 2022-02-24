@@ -1,0 +1,30 @@
+{
+  "name": "one-for-all",
+  "version": "v0.0.1",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel --no-cache src/index.html src/index.tsx src/index.css --open",
+    "build": "run-s clean build:parcel",
+    "build:parcel": "cross-env PURGE=true parcel build --no-source-maps --no-cache src/index.html src/index.tsx src/index.css",
+    "clean": "rm -rf .parcel-cache dist"
+  },
+  "dependencies": {
+    "@tail-kit/tail-kit": "^0.1.21",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/plugin-transform-react-jsx": "^7.17.3",
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.11",
+    "autoprefixer": "^10.4.2",
+    "cross-env": "^7.0.3",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.3.2",
+    "tailwindcss": "^3.0.23",
+    "typescript": "^4.5.5"
+  }
+}
