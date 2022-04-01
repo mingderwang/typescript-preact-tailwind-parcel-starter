@@ -3,7 +3,8 @@
   "version": "v0.0.1",
   "license": "MIT",
   "scripts": {
-    "start": "parcel --no-cache src/index.html src/index.tsx src/index.css --open",
+    "dev": "parcel --no-cache src/index.html --open",
+    "start": "parcel src/index.html",
     "build": "run-s clean build:parcel",
     "build:parcel": "cross-env PURGE=true parcel build --no-source-maps --no-cache src/index.html src/index.tsx src/index.css",
     "clean": "rm -rf .parcel-cache dist"
@@ -12,6 +13,7 @@
     "@tail-kit/tail-kit": "^0.1.21",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-hook-form": "^7.27.1",
     "react-icons": "^4.3.1"
   },
   "devDependencies": {

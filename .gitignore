@@ -1,3 +1,12 @@
-.parcel-cache
-dist
+.DS_Store
 node_modules
+dist
+build
+.env
+.env.local
+.env.production
+.cache
+.parcel-cache
+*.log
+.vercel
+vercel.json
